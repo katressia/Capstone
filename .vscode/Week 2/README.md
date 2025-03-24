@@ -1,7 +1,7 @@
 # Katressia
 ## I'm excited about learning in this program
 
-###Goals for this course
+### Goals for this course
 * Learn html
 * Learn Css
 * Learn javascript
