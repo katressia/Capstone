@@ -1,0 +1,22 @@
+html {
+  background-color: rgb(17, 34, 165);
+}
+
+body {
+  text-align: center;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 50px;
+  color:black
+}
+
+img {
+  height: 100%;
+}
+
+div {
+  border: 2px solid rgb(232, 226, 218);
+  margin: 10px;
+}
