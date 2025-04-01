@@ -1,5 +1,6 @@
 html {
   background-color: rgb(15, 15, 16);
+  background: linear-gradient(to top, rgb(156, 3, 244), 20%, rgb(14, 14, 14));
 }
 
 body {
@@ -25,3 +26,5 @@ div {
   border: 2px solid rgb(232, 226, 218);
   margin: 10px;
 }
+
+
