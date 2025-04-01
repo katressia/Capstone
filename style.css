@@ -1,15 +1,20 @@
 html {
-  background-color: rgb(17, 34, 165);
+  background-color: rgb(15, 15, 16);
 }
 
 body {
   text-align: center;
   font-size: 18px;
+  color:rgb(32, 234, 136);
 }
 
 h1 {
   font-size: 50px;
-  color:black
+  color:rgb(27, 173, 202)
+}
+h2 {
+  font-size: 50px;
+  color:rgb(13, 211, 198)
 }
 
 img {
