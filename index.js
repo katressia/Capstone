@@ -16,13 +16,10 @@ function render(state = store.home) {
 }
 
 router.hooks({
-
   before: (done, match) => {
-
     const view = match?.data?.view ? camelCase(match.data.view) : "home";
 
     switch (view) {
-
       case "home":
         axios
           .get(
@@ -43,8 +40,8 @@ router.hooks({
             done();
           });
         break;
-
-  }
+    }
+  },
   already: (match) => {
     const view = match?.data?.view ? camelCase(match.data.view) : "home";
 
@@ -61,15 +58,11 @@ router.hooks({
 router
   .on({
     "/": () => render(),
-    slash
     "/:view": function(match) {
-
       const view = match?.data?.view ? camelCase(match.data.view) : "home";
       if (view in store) {
-
         render(store[view]);
       } else {
-
         render(store.viewNotFound);
         console.log(`View ${view} not defined`);
       }
