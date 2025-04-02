@@ -1,5 +1,5 @@
 import html from "html-literal";
 
 export default () => html`
-  <footer>Kmystic</footer>
+  <footer>Kmystic Spiritual Oasis</footer>
 `;

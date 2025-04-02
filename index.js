@@ -40,6 +40,8 @@ router.hooks({
             done();
           });
         break;
+      default:
+        done();
     }
   },
   already: (match) => {
@@ -66,9 +68,6 @@ router
         render(store.viewNotFound);
         console.log(`View ${view} not defined`);
       }
-
-      const state = store[view];
-      render(state);
     },
   })
   .resolve();
