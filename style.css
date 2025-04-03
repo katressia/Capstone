@@ -1,6 +1,6 @@
 html {
   background-color: rgb(15, 15, 16);
-  background: linear-gradient(to top, rgb(156, 3, 244), 20%, rgb(14, 14, 14));
+  background: linear-gradient(to top, rgb(89, 4, 138), 20%, rgb(0, 0, 0));
 }
 
 body {
@@ -32,3 +32,8 @@ footer {
   color:rgb(226, 20, 37)
 }
 
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
