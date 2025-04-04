@@ -1,25 +1,33 @@
 html {
-  background-color: rgb(15, 15, 16);
-  background: linear-gradient(to top, rgb(89, 4, 138), 20%, rgb(0, 0, 0));
-}
+  background: linear-gradient(in oklab, rgb(1, 1, 13), rgb(102, 10, 138));
 
 body {
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   color:rgb(32, 234, 136);
-}
+  }
+
 
 h1 {
-  font-size: 50px;
-  color:rgb(27, 173, 202)
+  font-size: 100px;
+  color:rgb(27, 173, 202);
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 h2 {
-  font-size: 50px;
-  color:rgb(13, 211, 198)
+  font-size: 80px;
+  color:rgb(13, 211, 198);
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
-
-img {
-  height: 100%;
+h3 {
+  font-size: 65px;
+  color:rgb(13, 211, 198);
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 div {
@@ -32,8 +40,4 @@ footer {
   color:rgb(226, 20, 37)
 }
 
-.satisfy-regular {
-  font-family: "Satisfy", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+
