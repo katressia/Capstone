@@ -1,3 +1,4 @@
+import chakras from "./controllers/chakras.js";
 // 'Import' the Express module instead of http
 import express from "express";
 
@@ -6,8 +7,8 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 dotenv.config();
 
-// get the PORT from the environment variables, OR use 4040 as default
-const PORT = process.env.PORT || 4040;
+// get the PORT from the environment variables, OR use 1234 as default
+const PORT = process.env.PORT || 1234;
 
 // Initialize the Express application
 const app = express();
@@ -56,6 +57,7 @@ app.get("/status", (request, response) => {
   response.json({ message: "Service healthy" });
 });
 
+app.use("/chakras", chakras);
 // Tell the Express app to start listening
-// Let the humans know I am running and listening on 4040
+// Let the humans know I am running and listening on 1234
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));
