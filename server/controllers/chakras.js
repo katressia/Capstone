@@ -5,7 +5,6 @@ const router = Router();
 
 // Create chakra route
 router.post("/", async (request, response) => {
-  console.log("hello");
   try {
     const newChakra = new Chakra(request.body);
 
