@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const chakraSchema = new mongoose.Schema({
-  customer: {
+  name: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/,
@@ -21,7 +21,6 @@ const chakraSchema = new mongoose.Schema({
   },
   color: {
     type: String,
-    validate: /^[A-Za-z ]*$/,
   },
 });
 
