@@ -8,7 +8,6 @@ export default (state) => html`
       width="400"
       height="400"
     />
-    <h2>Breathe Easy</h2>
   </section>
   <h4>
     The weather in ${state.weather.city} is ${state.weather.description}.
@@ -16,7 +15,7 @@ export default (state) => html`
     ${state.weather.feelsLike}F.
   </h4>
   <h1>
-    Welcome to Breathe Easy
+    Welcome to Breathe Easy a place to destress
   </h1>
   <p>
     Stress and anxiety are very prevalent in todays society. Hopefully I can
