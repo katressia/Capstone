@@ -40,10 +40,16 @@ router.hooks({
             done();
           });
         break;
+      //switch statement for chakra axios
+      case "meditation":
+        axios.get(`http://localhost:1234/chakras`).then((response) => {
+          console.log("This is a axios request", response.data);
+        });
       default:
         done();
     }
   },
+
   already: (match) => {
     const view = match?.data?.view ? camelCase(match.data.view) : "home";
 
