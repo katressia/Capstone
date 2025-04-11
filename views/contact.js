@@ -17,6 +17,23 @@ export default () => html`
       I can be contacted at my email address: Katressiac@gmail.com. I can also
       be contacted at my facebook or linkedin
     </p>
+    <form action="" method="get" class="customer">
+      <div class="customerinfo">
+        <label for="name">Enter your name: </label>
+        <input type="text" name="name" id="name" required />
+      </div>
+      <div class="chakrainfo">
+        <label for="chakra">What chakra would you need help with: </label>
+        <input type="chakra" name="chakra" id="chakra" required />
+      </div>
+      <div class="form-example">
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" required />
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
     <a href="https://www.linkedin.com/in/katressia-moore-146a59239"
       >My linkedin</a
     >
