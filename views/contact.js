@@ -23,8 +23,8 @@ export default () => html`
         <input type="text" name="name" id="name" required />
       </div>
       <div class="chakrainfo">
-        <label for="chakra">What chakra would you need help with: </label>
-        <input type="chakra" name="chakra" id="chakra" required />
+        <label for="helpneeded">What would you need help with: </label>
+        <input type="helpneeded" name="helpneeded" id="helpneeded" required />
       </div>
       <div class="form-example">
         <label for="email">Enter your email: </label>
