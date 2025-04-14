@@ -79,12 +79,23 @@ export default () => html`
       The root chakra is the first of the seven chakras located at the base of your spine. The color associated with it is red. It is associated with sirvival security, stability,  When balanced, you feel grounded, stable, secure, and confident in the world. When  imbalanced it can lead to feelings of insecurity, anxiety, fear, and a lack of stability. To meditate on this chakra focus on a red burst of energy on the base of your spine.
       </p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ersZEW9ucA4?si=2PBxEIijx46ADmu_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <div class="chakra">
-        <label for="chakra">What chakra do you need help with: </label>
-        <input type="text" name="text" id="text" required />
-      </div>
-      <div class="submit">
+    <p>
+      <label for="chakra-select">Choose a chakra:</label>
+
+<select name="chakra" id="chakra-select">
+  <option value="">--What chakra do you need help with--</option>
+
+  <option value="Third-eye">Third-eye</option>
+  <option value="Throat">Throat</option>
+  <option value="Heart">Heart</option>
+  <option value="Solar-plexus">Solar-Plexus</option>
+  <option value="Sacral">Sacral</option>
+  <option value="Root">Root</option>
+</select>
+<div class="submit">
         <input type="submit" value="Submit" />
       </div>
-  </section>
+    </form>
+</p>
+    </section>
 `;

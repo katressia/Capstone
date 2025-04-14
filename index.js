@@ -42,7 +42,7 @@ router.hooks({
         break;
       //switch statement for chakra axios
       case "meditation":
-        axios.get(`http://localhost:1234/chakras`).then((response) => {
+        axios.get(`${process.env.CHAKRASURI}`).then((response) => {
           console.log("This is a axios request", response.data);
         });
       default:
