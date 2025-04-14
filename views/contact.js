@@ -17,15 +17,23 @@ export default () => html`
       I can be contacted at my email address: Katressiac@gmail.com. I can also
       be contacted at my facebook or linkedin
     </p>
-    <form action="" method="get" class="customer">
+    <form action="" method="get" class="customer" id="contactform">
       <div class="customerinfo">
         <label for="name">Enter your name: </label>
         <input type="text" name="name" id="name" required />
       </div>
-      <div class="chakrainfo">
-        <label for="helpneeded">What would you need help with: </label>
-        <input type="helpneeded" name="helpneeded" id="helpneeded" required />
-      </div>
+      <label for="chakra-select">Choose a chakra:</label>
+
+      <select name="chakra" id="chakra-select">
+        <option value="">--What chakra do you need help with--</option>
+        <option value="Crown">Crown</option>
+        <option value="Third-eye">Third-eye</option>
+        <option value="Throat">Throat</option>
+        <option value="Heart">Heart</option>
+        <option value="Solar-plexus">Solar-Plexus</option>
+        <option value="Sacral">Sacral</option>
+        <option value="Root">Root</option>
+      </select>
       <div class="form-example">
         <label for="email">Enter your email: </label>
         <input type="email" name="email" id="email" required />
