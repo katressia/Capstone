@@ -26,13 +26,13 @@ export default () => html`
 
       <select name="chakra" id="chakra-select">
         <option value="">--What chakra do you need help with--</option>
-        <option value="Crown">Crown</option>
-        <option value="Third-eye">Third-eye</option>
-        <option value="Throat">Throat</option>
-        <option value="Heart">Heart</option>
-        <option value="Solar-plexus">Solar-Plexus</option>
-        <option value="Sacral">Sacral</option>
-        <option value="Root">Root</option>
+        <option value="crown">Crown</option>
+        <option value="third-eye">Third-eye</option>
+        <option value="throat">Throat</option>
+        <option value="heart">Heart</option>
+        <option value="solar-plexus">Solar-Plexus</option>
+        <option value="sacral">Sacral</option>
+        <option value="root">Root</option>
       </select>
       <div class="form-example">
         <label for="email">Enter your email: </label>
