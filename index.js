@@ -58,33 +58,37 @@ router.hooks({
   after: (match) => {
     const view = match?.data?.view ? camelCase(match.data.view) : "home";
     if (view === "contact") {
-      document.querySelector("#contactform").addEventListener("submit", (event) => {
-        event.preventDefault();
-        // Get the form element
-        const inputList = event.target.elements;
-        console.log("Input Chakra List", inputList);
-        const requestData = {
-          name: inputList.name.value,
-          chakra: inputList.chakra.value,
-          email: inputList.email.value
-        };
-        // Log the request body to the console
-        console.log("request Body", requestData);
-        axios
-          // Make a POST request to the API to create a new pizza
-          .post(`${process.env.CAPSTONEURL}/contact`, requestData)
-          .then((response) => {
-          })
-          // If there is an error log it to the console
-          .catch((error) => {
-            console.log("It puked", error);
-          });
-      });
-    };
+      document
+        .querySelector("#contactform")
+        .addEventListener("submit", (event) => {
+          event.preventDefault();
+          // Get the form element
+          const inputList = event.target.elements;
+          console.log("Input Chakra List", inputList);
+          const requestData = {
+            name: inputList.name.value,
+            chakra: inputList.chakra.value,
+            email: inputList.email.value,
+          };
+          // Log the request body to the console
+          console.log("request Body", requestData);
+          axios
+            // Make a POST request to the API to create a new pizza
+            .post(`${process.env.CAPSTONEURL}/chakras`, requestData)
+            .then((response) => {
+              alert("Request submitted");
+            })
+            // If there is an error log it to the console
+            .catch((error) => {
+              console.log("It puked", error);
+            });
+        });
+    }
     router.updatePageLinks();
     document.querySelector(".fa-bars").addEventListener("click", () => {
-    document.querySelector("nav > ul").classList.toggle("hidden--mobile");
- //   });
+      document.querySelector("nav > ul").classList.toggle("hidden--mobile");
+    });
+  },
 });
 
 router
