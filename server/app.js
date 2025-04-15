@@ -7,8 +7,8 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 dotenv.config();
 
-// get the PORT from the environment variables, OR use 1234 as default
-const PORT = process.env.PORT || 1234;
+// get the PORT from the environment variables, OR use 4040 as default
+const PORT = process.env.PORT || 4040;
 
 // Initialize the Express application
 const app = express();

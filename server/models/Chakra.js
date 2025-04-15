@@ -19,8 +19,9 @@ const chakraSchema = new mongoose.Schema({
       "root",
     ],
   },
-  color: {
+  email: {
     type: String,
+    required: true,
   },
 });
 
