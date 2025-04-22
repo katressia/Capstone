@@ -1,6 +1,5 @@
 html {
-  background: linear-gradient(in oklab, rgb(1, 1, 13), rgb(102, 10, 138));
-
+  background: repeating-radial-gradient(#070007, #57026c 70%);
 body {
   text-align: center;
   font-size: 20px;
